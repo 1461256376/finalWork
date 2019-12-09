@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"/>
+
+	<link rel="stylesheet" type="text/css" href="sty.css">
+	<script type="text/javascript" src="js/animate.js"></script>
+</head>
+<body>
+
+
+	<div class="scro" id="scro">
+		<div class="inWordsAndImg" id="inWordsAndImg">
+			<div class="trumpet"><img src="images/a15.png"></div>
+			<div class="words" id="words"><div class="txt" id="txt">[温馨提示]最有不少不法分子在网上骗人，请大家注意!!!</div></div>
+		</div>
+	</div>
+
+
+	<div class="box" id="box">
+		<div class="slider" id="slider">
+			<div class="slide"><img src="images/b5.png" alt=""></div>
+			<div class="slide"><img src="images/b1.png" alt=""></div>
+			<div class="slide"><img src="images/b2.png" alt=""></div>
+			<div class="slide"><img src="images/b3.png" alt=""></div>
+			<div class="slide"><img src="images/b4.png" alt=""></div>
+			<div class="slide"><img src="images/b5.png" alt=""></div>
+			<div class="slide"><img src="images/b1.png" alt=""></div>
+		</div>
+		<!-- 左右切换 -->
+		<span id="left"><</span> 
+		<span id="right">></span>
+		<!-- 按钮 -->
+		<ul class="nav" id="nav"> 
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+
+
+</body>
+</html>
+
+<!-- 		var txt = document.getElementById('txt');
+		var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1; // 第几张图，用该改定位
+		var timer;
+		var isMoving = false;
+
+		setInterval(function(){
+			var now = parseInt(getStyle(txt, 'right'));
+			txt.style.right = now + 3 + 'px' ;
+			if(now + 50 >= 270){
+				txt.style.right = -972 + 'px';
+			}
+		},30);
+
+
+
+		function next(){
+			if(!isMoving){
+				isMoving = true;
+				index++;
+				navChange();
+				animate(slider, {left:-1200*index},function(){
+					if(index === 6){
+						slider.style.left = "-1200px";
+						index = 1;
+					}
+					isMoving = false;
+				});
+			}
+		}
+		function pre(){
+			if(!isMoving){
+				isMoving = true;
+				index--;
+				navChange();
+				animate(slider, {left:-1200*index},function(){
+					if(index === 0){
+						slider.style.left = "-6000px";
+						index = 5;
+					}
+					isMoving = false;
+				});
+			}
+		}
+		var timer = setInterval(next, 3000);
+		
+
+		box.onmouseover = function(){ // 划上清除计时器
+			animate(left, {opacity:50})
+			animate(right, {opacity:50})
+			clearInterval(timer);
+		}
+		// 划出继续
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+
+		right.onclick = next;
+		left.onclick = pre;
+
+		for(var i = 0; i < oNavlist.length; ++i){
+			oNavlist[i].idx = i;
+			oNavlist[i].onclick = function(){
+				index = this.idx + 1;
+				navChange();
+				animate(slider, {left:-1200*index});
+			}
+		}
+
+		oNavlist[0].style.color = 'white';
+		function navChange(){ // 修改圆点颜色
+			for(var i = 0; i < oNavlist.length; ++i){
+				oNavlist[i].className = '';
+				oNavlist[i].style.color = 'black';
+				if(i == 0)
+					oNavlist[i].style.color = 'red';
+			}
+			if(index ===6){
+				oNavlist[0].className = 'active';
+				oNavlist[0].style.color = 'white';
+				if(i == 0)
+					oNavlist[i].style.color = 'red';
+			}
+			else if(index === 0){
+				oNavlist[4].className = 'active';
+				oNavlist[4].style.color = 'white';
+				if(i == 0)
+					oNavlist[i].style.color = 'red';
+			}
+			else{
+				oNavlist[index-1].className = 'active';
+				oNavlist[index-1].style.color = 'white';
+				if(i == 0)
+					oNavlist[i].style.color = 'red';
+			}
+		} -->

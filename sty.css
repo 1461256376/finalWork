@@ -1,0 +1,113 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+ul,li{
+	list-style: none;
+	text-align: center;
+}
+
+.trumpet{
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+	position: relative;
+	top: -2px;
+}
+
+.words{
+	height: 20px;
+	width: 972px;
+	display: inline-block;
+	height: 20px;
+	color: red;
+	position: relative;
+	overflow: hidden;
+}
+
+.txt{
+	height: 20px;
+	width: 400px;
+	position: relative;
+	right: -972px; 
+	font-size: 14px;
+
+}
+
+.scro{
+	height: 20px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	background-color: #ccc;
+}
+
+.inWordsAndImg{
+	width: 1000px;
+	margin:0 auto;
+}
+
+.box{
+	width: 1200px;
+	height: 397px;
+	/*border: 1px solid red;*/
+	margin:40px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.slider{
+	width: 8400px;
+	position: absolute;
+	left: -1200px;
+}
+
+.slide{
+	width: 1200px;
+	overflow: hidden;
+	float: left;
+}
+
+
+.box>span{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: ;
+	top: 175px;
+	line-height: 50px;
+	background: rgb(255,0,0);
+	font-size: 30px;
+	position: absolute;
+
+	opacity: 0;
+}
+
+#left{
+	left: 30px;
+}
+
+#right{
+	right: 30px;
+}
+.nav{
+	position: absolute;
+	left: 500px;
+	bottom: 20px;
+}
+.nav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor:pointer;
+	margin: 0 10px;
+	border-radius: 50%;
+}
+.nav .active{
+	background: red;
+}
